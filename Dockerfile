@@ -5,4 +5,4 @@ WORKDIR /app
 
 EXPOSE 5000
 
-CMD ["sh", "log_periodically.sh"]
+CMD ["sh", "start.sh"]

@@ -1,6 +1,4 @@
-#!/bin/bash
-python3 -m http.server 5000 &
-
+#!/bin/sh
 while true
 do
     echo "my stdout message"
