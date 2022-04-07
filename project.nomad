@@ -389,6 +389,10 @@ job "NOMAD_VAR_SLUG" {
         }
       }
 
+      task "log-shipper" {
+        # TODO: transfer logs from the shared `alloc` folder to appropriately named and organized archive.org item(s)
+      }
+
       dynamic "volume" {
         for_each = setintersection([var.HOME], ["ro"])
         labels = [ "home-${volume.key}" ]
