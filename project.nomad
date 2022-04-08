@@ -371,8 +371,8 @@ job "NOMAD_VAR_SLUG" {
 
           logs {
             # governs the management of log files before they are shipped (see log-shipper below)
-            max_files = 10
-            max_file_size = 0
+            max_files = 10  # will rotate lowest index out
+            max_file_size = 10  # MB
           }
         }
       } # end dynamic "task"
