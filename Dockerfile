@@ -1,5 +1,5 @@
 FROM python:3-alpine
-COPY log_periodically.sh index.html /app/
+COPY log_periodically.sh index.html start.sh /app/
 
 WORKDIR /app
 
