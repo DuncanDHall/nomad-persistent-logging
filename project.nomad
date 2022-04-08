@@ -368,6 +368,12 @@ job "NOMAD_VAR_SLUG" {
               data = "{{ key \"${var.SLUG}\" }}"
             }
           }
+
+          logs {
+            # governs the management of log files before they are shipped (see log-shipper below)
+            max_files = 10
+            max_file_size = 0
+          }
         }
       } # end dynamic "task"
 
