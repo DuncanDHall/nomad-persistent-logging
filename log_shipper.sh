@@ -18,7 +18,7 @@ then
 fi
 
 # prepare ia config file
-echo -e "[s3]\naccess = $S3_ACCESS\nsecret = $S3_SECRET\n" > ia_config
+echo -e "[s3]\naccess = $LOGGING_S3_ACCESS\nsecret = $LOGGING_S3_SECRET\n" > ia_config
 
 # get the project slug to use as folder name
 folder_name="$1"
