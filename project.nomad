@@ -399,7 +399,7 @@ job "NOMAD_VAR_SLUG" {
         # TODO: transfer logs from the shared `alloc` folder to appropriately named and organized archive.org item(s)
         driver = "exec"
         config {
-          command = "echo"
+          command = "/bin/sh"
           args    = ["log_shipper_start.sh", "${var.SLUG}"]  # used to set the folder name for the logs
         }
 
