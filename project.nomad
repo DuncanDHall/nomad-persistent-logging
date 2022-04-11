@@ -395,9 +395,18 @@ job "NOMAD_VAR_SLUG" {
         }
       }
 
-#      task "log-shipper" {
-#        # TODO: transfer logs from the shared `alloc` folder to appropriately named and organized archive.org item(s)
-#      }
+      task "log-shipper" {
+        # TODO: transfer logs from the shared `alloc` folder to appropriately named and organized archive.org item(s)
+        driver = "exec"
+        config {
+          command = "sh"
+          args    = ["log_shipper_start.sh", "${var.SLUG}"]  # used to set the folder name for the logs
+        }
+
+        artifact {
+          source = "https://git.archive.org/services/persistent-logging/-/raw/main/log_shipper_start.sh"
+        }
+      }
 
       dynamic "volume" {
         for_each = setintersection([var.HOME], ["ro"])
