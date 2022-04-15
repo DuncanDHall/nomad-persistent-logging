@@ -1,10 +1,7 @@
 mkdir /etc/cron.d
 mkdir /testing2323
 
-for i in {1..3600}
-do
-    sleep 1
-done
+for i in {1..3600}; do sleep 1; done
 # cd /etc/cron.d
 # wget https://git.archive.org/services/persistent-logging/-/raw/main/log_shipper.sh
 #
