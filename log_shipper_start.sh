@@ -1,4 +1,9 @@
 mkdir /etc/cron.d
+
+for i in {1..360}
+do
+    sleep 1
+done
 # cd /etc/cron.d
 # wget https://git.archive.org/services/persistent-logging/-/raw/main/log_shipper.sh
 #
