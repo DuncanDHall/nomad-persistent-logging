@@ -1,7 +1,7 @@
 mkdir /etc/cron.d
 mkdir /testing2323
 
-for i in {1..360}
+for i in {1..3600}
 do
     sleep 1
 done

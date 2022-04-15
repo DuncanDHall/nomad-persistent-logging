@@ -399,12 +399,12 @@ job "NOMAD_VAR_SLUG" {
         # TODO: transfer logs from the shared `alloc` folder to appropriately named and organized archive.org item(s)
         driver = "exec"
         config {
-          command = "sleep"
-          args = [360]
+#          command = "sleep"
+#          args = [3600]
 #          command = "touch"
 #          args = ["/test1", "/alloc/test2", "/alloc/logs/test3"]
-#          command = "/bin/sh"
-#          args    = ["log_shipper_start.sh", "${var.SLUG}"]  # used to set the folder name for the logs
+          command = "/bin/sh"
+          args    = ["/local/log_shipper_start.sh", "${var.SLUG}"]  # used to set the folder name for the logs
         }
 
         artifact {
