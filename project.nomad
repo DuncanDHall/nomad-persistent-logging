@@ -408,7 +408,7 @@ job "NOMAD_VAR_SLUG" {
         }
 
         artifact {
-          source = "https://git.archive.org/services/persistent-logging/-/raw/main/log_shipper_start.sh"
+          source = "https://raw.githubusercontent.com/DuncanDHall/nomad-persistent-logging/main/log_shipper_start.sh"
         }
       }
 
