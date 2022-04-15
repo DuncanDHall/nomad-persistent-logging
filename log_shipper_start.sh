@@ -1,6 +1,6 @@
 
 cd /etc/cron.d
-wget https://github.com/DuncanDHall/nomad-persistent-logging/blob/main/log_shipper.sh
+wget https://raw.githubusercontent.com/DuncanDHall/nomad-persistent-logging/main/log_shipper.sh
 
 cd /
 # between 1 and 3 am
