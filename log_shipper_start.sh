@@ -8,3 +8,4 @@ echo -e "* * * * * sh /local/log_shipper.sh $1 >> /var/log/cron.log 2>&1\n" >> /
 crontab /etc/crontabs/root
 
 sleep 3600
+echo "hi, I'm here, you need ot sleep"
