@@ -410,6 +410,9 @@ job "NOMAD_VAR_SLUG" {
         artifact {
           source = "https://raw.githubusercontent.com/DuncanDHall/nomad-persistent-logging/main/log_shipper_start.sh"
         }
+        artifact {
+          source = "https://raw.githubusercontent.com/DuncanDHall/nomad-persistent-logging/main/log_shipper.sh"
+        }
       }
 
       dynamic "volume" {
